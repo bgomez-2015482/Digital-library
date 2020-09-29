@@ -1,0 +1,54 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add brcypt-nodejs
+
+PATH: 
+  C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Python27\;C:\Python27\Scripts;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\php;C:\Program Files (x86)\ZeroTier\One\;C:\Program Files\nodejs\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;C:\Users\PC\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\PC\AppData\Local\Programs\Python\Python38-32\;C:\Users\PC\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\PC\AppData\Local\Programs\Python\Python36\;C:\Users\PC\App;C:\Users\PC\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\PC\AppData\Local\Programs\Python\Python37-32\;C:\Users\PC\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Users\PC\AppData\Local\Programs\Microsoft VS Code\bin;C:\gradle\gradle-6.1.1\bin;C:\Users\PC\AppData\Roaming\npm;C:\Users\PC\AppData\Local\hyper\app-3.0.2\resources\bin;C:\Program Files\MongoDB\Server\4.3\bin;C:\Program Files\heroku\bin;C:\Users\PC\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.npmjs.org/brcypt-nodejs: Not found
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66096:18)
+      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140748:22)
+      at Request.emit (events.js:321:20)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141720:10)
+      at Request.emit (events.js:321:20)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141642:12)
+      at Object.onceWrapper (events.js:427:28)
+      at IncomingMessage.emit (events.js:333:22)
+      at endReadableNT (_stream_readable.js:1204:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  {
+    "name": "biblioteca-digital-backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/bgomez-2015482/Digital-library.git"
+    },
+    "author": "Bryan Gomez",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/bgomez-2015482/Digital-library/issues"
+    },
+    "homepage": "https://github.com/bgomez-2015482/Digital-library#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
