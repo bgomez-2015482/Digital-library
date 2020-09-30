@@ -1,0 +1,1368 @@
+{
+	"id": "8230a22e-692b-9192-dfca-df98bbe435a7",
+	"name": "Biblioteca-Digital",
+	"description": "",
+	"order": [
+		"f803caad-a4f5-ea34-dff0-daec1692f6ce",
+		"3064308a-bf5a-d0e5-32e4-bd0dbae7d4dc",
+		"6d001f7e-1850-2658-1ceb-6862eeb62f1d"
+	],
+	"folders": [
+		{
+			"name": "BOOKS",
+			"description": "",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"order": [
+				"3b8db478-ed36-d51d-78a3-e7c4f947a5e1",
+				"bff84adb-5c6e-0a2a-4dc8-a73c65e54e31",
+				"80ce7a3f-d7ea-b50f-fd1f-a562f8097726",
+				"673d7ba1-d79e-3d9e-6121-761c7f775071",
+				"fc937506-6b2b-cbce-1c9b-dbf856759c83",
+				"59bae0a9-5f59-ff43-3033-e1b81728ebd8",
+				"4ec90662-f4e7-faaf-de8b-484d35562ad6",
+				"0975c312-b5c9-b01e-0817-75e018c591f4"
+			],
+			"owner": "11654602",
+			"folders_order": [],
+			"id": "d5e93c00-f101-4460-e708-2381c392c802"
+		},
+		{
+			"name": "MAGAZINES",
+			"description": "",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"order": [
+				"75d61be4-0ce3-917f-a7aa-a113e9817e04",
+				"66c7b358-32ed-fa10-1d20-7dff2e2fa42e",
+				"0eea1ef6-4824-973f-118a-4b35b9e8c75a",
+				"8e9861c6-671e-ee1f-b93f-368b4db179da",
+				"5cdb464b-bcc2-8ad8-14cc-cd556f4f15ee",
+				"576b30ea-0df4-7e5d-41b0-a2fb71af4b1e",
+				"f949b32a-3620-0cb9-37a8-ffcc4b31fb63",
+				"bd34b9a8-5bf2-f52f-9721-f97d46e8d4eb"
+			],
+			"owner": "11654602",
+			"folders_order": [],
+			"id": "d4102454-ecaa-c755-7c51-73a888b0d1b1"
+		},
+		{
+			"name": "USER",
+			"description": "",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"order": [
+				"07e312bf-c7d5-89c9-94b6-141ea5d26562",
+				"acf07b21-e2cc-60e8-532f-cc5ca80c201c",
+				"66f7330d-e38b-11c7-a956-b94671c576eb",
+				"cbfe69f4-0505-c69d-94b9-078c0d43ae55"
+			],
+			"owner": "11654602",
+			"folders_order": [],
+			"id": "1528a79b-740b-5475-a3e6-10f36e2decee"
+		}
+	],
+	"folders_order": [
+		"d5e93c00-f101-4460-e708-2381c392c802",
+		"1528a79b-740b-5475-a3e6-10f36e2decee",
+		"d4102454-ecaa-c755-7c51-73a888b0d1b1"
+	],
+	"timestamp": 1601081910707,
+	"owner": "11654602",
+	"public": false,
+	"requests": [
+		{
+			"id": "07e312bf-c7d5-89c9-94b6-141ea5d26562",
+			"headers": "Content-Type: application/x-www-form-urlencoded\nAuthorization: \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjNjN2ZhZjQ2ZTJhYjgxZTk5N2YiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTQzNDc2NiwiZXhwIjoxNjA5MjEwNzY2fQ.okhGYTTeJsIcehj2rjWEO6xCJQc_vqZ7OHGn8HzGEOA\"\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjNjN2ZhZjQ2ZTJhYjgxZTk5N2YiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTQzNDc2NiwiZXhwIjoxNjA5MjEwNzY2fQ.okhGYTTeJsIcehj2rjWEO6xCJQc_vqZ7OHGn8HzGEOA\"",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3800/user/createUser",
+			"folder": "1528a79b-740b-5475-a3e6-10f36e2decee",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "Jefe",
+					"description": "admin",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "role",
+					"value": "admin",
+					"description": "admin",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "password",
+					"value": "admin",
+					"description": "admin",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "cui",
+					"value": "2020684135434",
+					"description": "catedrático",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "name",
+					"value": "Bryan",
+					"description": "catedrático",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "surname",
+					"value": "Gomez",
+					"description": "catedrático",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "role",
+					"value": "catedrático",
+					"description": "catedrático",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "password",
+					"value": "12345",
+					"description": "catedrático",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "carnet",
+					"value": "2015482",
+					"description": "estudiante",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Alexander",
+					"description": "estudiante",
+					"enabled": true
+				},
+				{
+					"key": "surname",
+					"value": "Chávez",
+					"description": "estudiante",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "estudiante",
+					"description": "estudiante",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123",
+					"description": "estudiante",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1601435028084,
+			"name": "CREATE-USERS",
+			"description": "",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"responses": []
+		},
+		{
+			"id": "0975c312-b5c9-b01e-0817-75e018c591f4",
+			"headers": "Authorization: \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjU4MmZhZjQ2ZTJhYjgxZTk5ODAiLCJuYW1lIjoiQnJ5YW4iLCJzdXJuYW1lIjoiR29tZXoiLCJjb3VudGVyTG9hbiI6MCwicm9sZSI6ImNhdGVkcsOhdGljbyIsImlhdCI6MTYwMTQzOTY1MiwiZXhwIjoxNjA5MjE1NjUyfQ.WoA52EukCHVNlwr2mejzNLZ-VfZLYfNofpBoNROBqw0\"\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjU4MmZhZjQ2ZTJhYjgxZTk5ODAiLCJuYW1lIjoiQnJ5YW4iLCJzdXJuYW1lIjoiR29tZXoiLCJjb3VudGVyTG9hbiI6MCwicm9sZSI6ImNhdGVkcsOhdGljbyIsImlhdCI6MTYwMTQzOTY1MiwiZXhwIjoxNjA5MjE1NjUyfQ.WoA52EukCHVNlwr2mejzNLZ-VfZLYfNofpBoNROBqw0\"",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3800/user/returnBooks",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"data": [
+				{
+					"key": "title",
+					"value": "Diario de Ana Frank",
+					"description": ""
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "RETURN-BOOKS",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1601440302205,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "d5e93c00-f101-4460-e708-2381c392c802"
+		},
+		{
+			"id": "0eea1ef6-4824-973f-118a-4b35b9e8c75a",
+			"headers": "Authorization: \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjZmZTFiYWFkMzJkZDNjNmNkYjI1MzMiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTE2Nzg1MCwiZXhwIjoxNjA4OTQzODUwfQ.-TQAcLo6eBDiB0Sqeh3aIuAsFpbv_PL8px_RYRf71wA\"\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjZmZTFiYWFkMzJkZDNjNmNkYjI1MzMiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTE2Nzg1MCwiZXhwIjoxNjA4OTQzODUwfQ.-TQAcLo6eBDiB0Sqeh3aIuAsFpbv_PL8px_RYRf71wA\"",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3800/user/updateMagazine",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"data": [
+				{
+					"key": "_id",
+					"value": "5f6fec50d96e9416bc3de56d",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "author",
+					"value": "Bryan Alexander Gomez",
+					"description": ""
+				},
+				{
+					"key": "title",
+					"value": "The adventure 2",
+					"description": ""
+				},
+				{
+					"key": "edition",
+					"value": "1ra",
+					"description": ""
+				},
+				{
+					"key": "description",
+					"value": "The most popular jhon adventures 2",
+					"description": ""
+				},
+				{
+					"key": "frecuency",
+					"value": "Low",
+					"description": ""
+				},
+				{
+					"key": "ejemplares",
+					"value": "50",
+					"description": ""
+				},
+				{
+					"key": "themes",
+					"value": "Adventure",
+					"description": ""
+				},
+				{
+					"key": "keywords",
+					"value": "Terror, Magic",
+					"description": ""
+				},
+				{
+					"key": "copies",
+					"value": "45",
+					"description": ""
+				},
+				{
+					"key": "avaliable",
+					"value": "30",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "UPDATE-MAGAZINES",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1601176322881,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "d4102454-ecaa-c755-7c51-73a888b0d1b1"
+		},
+		{
+			"id": "3064308a-bf5a-d0e5-32e4-bd0dbae7d4dc",
+			"headers": "Authorization: \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjNjN2ZhZjQ2ZTJhYjgxZTk5N2YiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTQ0MjIzNSwiZXhwIjoxNjA5MjE4MjM1fQ.4CYqC21MtC3l2ss2F6rAqmheGdXcVRmgzopx5yE6cp4\"\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjNjN2ZhZjQ2ZTJhYjgxZTk5N2YiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTQ0MjIzNSwiZXhwIjoxNjA5MjE4MjM1fQ.4CYqC21MtC3l2ss2F6rAqmheGdXcVRmgzopx5yE6cp4\"",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3800/user/booksReports",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"data": [
+				{
+					"key": "filter",
+					"value": "LIBROS MAS PRESTADOS",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "filter",
+					"value": "LIBROS MÁS BUSCADOS",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "BOOKS-REPORTS",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1601443686801,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "3b8db478-ed36-d51d-78a3-e7c4f947a5e1",
+			"headers": "Authorization: \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjNjN2ZhZjQ2ZTJhYjgxZTk5N2YiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTQzNDc2NiwiZXhwIjoxNjA5MjEwNzY2fQ.okhGYTTeJsIcehj2rjWEO6xCJQc_vqZ7OHGn8HzGEOA\"\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjNjN2ZhZjQ2ZTJhYjgxZTk5N2YiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTQzNDc2NiwiZXhwIjoxNjA5MjEwNzY2fQ.okhGYTTeJsIcehj2rjWEO6xCJQc_vqZ7OHGn8HzGEOA\"",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3800/user/createBook",
+			"folder": "d5e93c00-f101-4460-e708-2381c392c802",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "author",
+					"value": "Ana Frank",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "Diario de Ana Frank",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "edition",
+					"value": "1era Edición",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "keywords",
+					"value": "Segunda Guerra Mundial",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "Oculta con su familia, otra familia judía (los van Pels) y un dentista (Dussel), en una buhardilla de unos almacenes de Ámsterdam durante la ocupación nazi de Países Bajos, Ana Frank con trece años, cuenta en su diario, al que llamó «Kitty», la vida del grupo.",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "themes",
+					"value": "Segunda Guerra Mundial, Suspenso",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "copies",
+					"value": "50",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1601435510527,
+			"name": "CREATE-BOOKS",
+			"description": "",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"responses": []
+		},
+		{
+			"id": "4ec90662-f4e7-faaf-de8b-484d35562ad6",
+			"headers": "Authorization: \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjU4MmZhZjQ2ZTJhYjgxZTk5ODAiLCJuYW1lIjoiQnJ5YW4iLCJzdXJuYW1lIjoiR29tZXoiLCJjb3VudGVyTG9hbiI6MCwicm9sZSI6ImNhdGVkcsOhdGljbyIsImlhdCI6MTYwMTQzOTY1MiwiZXhwIjoxNjA5MjE1NjUyfQ.WoA52EukCHVNlwr2mejzNLZ-VfZLYfNofpBoNROBqw0\"\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjU4MmZhZjQ2ZTJhYjgxZTk5ODAiLCJuYW1lIjoiQnJ5YW4iLCJzdXJuYW1lIjoiR29tZXoiLCJjb3VudGVyTG9hbiI6MCwicm9sZSI6ImNhdGVkcsOhdGljbyIsImlhdCI6MTYwMTQzOTY1MiwiZXhwIjoxNjA5MjE1NjUyfQ.WoA52EukCHVNlwr2mejzNLZ-VfZLYfNofpBoNROBqw0\"",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3800/user/loanBooks",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "title",
+					"value": "Diario de Ana Frank",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1601440339091,
+			"name": "LOAN-BOOKS",
+			"description": "",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"responses": []
+		},
+		{
+			"id": "576b30ea-0df4-7e5d-41b0-a2fb71af4b1e",
+			"headers": "Authorization: \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjNjN2ZhZjQ2ZTJhYjgxZTk5N2YiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTQzNDc2NiwiZXhwIjoxNjA5MjEwNzY2fQ.okhGYTTeJsIcehj2rjWEO6xCJQc_vqZ7OHGn8HzGEOA\"\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjNjN2ZhZjQ2ZTJhYjgxZTk5N2YiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTQzNDc2NiwiZXhwIjoxNjA5MjEwNzY2fQ.okhGYTTeJsIcehj2rjWEO6xCJQc_vqZ7OHGn8HzGEOA\"",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3800/user/searchMagazine",
+			"folder": "d4102454-ecaa-c755-7c51-73a888b0d1b1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "filter",
+					"value": "TITLE",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "title",
+					"value": "Spider-Man",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "filter",
+					"value": "KEYWORDS",
+					"description": ""
+				},
+				{
+					"key": "keywords",
+					"value": "Acción",
+					"description": ""
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1601439612780,
+			"name": "SEARCH-MAGAZINES",
+			"description": "",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"responses": []
+		},
+		{
+			"id": "59bae0a9-5f59-ff43-3033-e1b81728ebd8",
+			"headers": "Authorization: \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjNjN2ZhZjQ2ZTJhYjgxZTk5N2YiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTQzNDc2NiwiZXhwIjoxNjA5MjEwNzY2fQ.okhGYTTeJsIcehj2rjWEO6xCJQc_vqZ7OHGn8HzGEOA\"\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjNjN2ZhZjQ2ZTJhYjgxZTk5N2YiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTQzNDc2NiwiZXhwIjoxNjA5MjEwNzY2fQ.okhGYTTeJsIcehj2rjWEO6xCJQc_vqZ7OHGn8HzGEOA\"",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3800/user/searchBook",
+			"folder": "d5e93c00-f101-4460-e708-2381c392c802",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "filter",
+					"value": "KEYWORDS",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "keywords",
+					"value": "Segunda Guerra Mundial",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1601439553383,
+			"name": "SEARCH-BOOKS",
+			"description": "",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"responses": []
+		},
+		{
+			"id": "5cdb464b-bcc2-8ad8-14cc-cd556f4f15ee",
+			"headers": "Authorization: \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjNjN2ZhZjQ2ZTJhYjgxZTk5N2YiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTQzNDc2NiwiZXhwIjoxNjA5MjEwNzY2fQ.okhGYTTeJsIcehj2rjWEO6xCJQc_vqZ7OHGn8HzGEOA\"\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjNjN2ZhZjQ2ZTJhYjgxZTk5N2YiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTQzNDc2NiwiZXhwIjoxNjA5MjEwNzY2fQ.okhGYTTeJsIcehj2rjWEO6xCJQc_vqZ7OHGn8HzGEOA\"",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3800/user/magazinesOrderBy",
+			"folder": "d4102454-ecaa-c755-7c51-73a888b0d1b1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "filter",
+					"value": "AVALIABLE",
+					"description": ""
+				},
+				{
+					"key": "order",
+					"value": "DESCENDENT",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "order",
+					"value": "ASCENDENT",
+					"description": ""
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1601439420553,
+			"name": "ORDER-MAGAZINES",
+			"description": "",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"responses": []
+		},
+		{
+			"id": "66c7b358-32ed-fa10-1d20-7dff2e2fa42e",
+			"headers": "Authorization: \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjZmZTFiYWFkMzJkZDNjNmNkYjI1MzMiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTE2Nzg1MCwiZXhwIjoxNjA4OTQzODUwfQ.-TQAcLo6eBDiB0Sqeh3aIuAsFpbv_PL8px_RYRf71wA\"\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjZmZTFiYWFkMzJkZDNjNmNkYjI1MzMiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTE2Nzg1MCwiZXhwIjoxNjA4OTQzODUwfQ.-TQAcLo6eBDiB0Sqeh3aIuAsFpbv_PL8px_RYRf71wA\"",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3800/user/deleteMagazine",
+			"folder": "d4102454-ecaa-c755-7c51-73a888b0d1b1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "_id",
+					"value": "5f73a104f332e12a981ec870",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1601414124159,
+			"name": "DELETE-MAGAZINES",
+			"description": "",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"responses": []
+		},
+		{
+			"id": "66f7330d-e38b-11c7-a956-b94671c576eb",
+			"headers": "Authorization: \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjZmOGY1ZGVjZTNlZTI1ZTQ5MDVjNjIiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTE0Njc0NywiZXhwIjoxNjA4OTIyNzQ3fQ.v89La_XzAiybuCPbiQI7AjIzssgWG1hBvC-cwbwoxXU\"\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjZmOGY1ZGVjZTNlZTI1ZTQ5MDVjNjIiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTE0Njc0NywiZXhwIjoxNjA4OTIyNzQ3fQ.v89La_XzAiybuCPbiQI7AjIzssgWG1hBvC-cwbwoxXU\"",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3800/user/updateUser",
+			"folder": "1528a79b-740b-5475-a3e6-10f36e2decee",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [
+				{
+					"key": "_id",
+					"value": "5f6f8fbe165e233dcc9515bb",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "surname",
+					"value": "armas",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "catedrático",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "pedro",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "javafsdf",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cui",
+					"value": "2020154896",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1601148909842,
+			"name": "UPDATE-USER",
+			"description": "",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"responses": []
+		},
+		{
+			"id": "673d7ba1-d79e-3d9e-6121-761c7f775071",
+			"headers": "Authorization: \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjNjN2ZhZjQ2ZTJhYjgxZTk5N2YiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTQzNDc2NiwiZXhwIjoxNjA5MjEwNzY2fQ.okhGYTTeJsIcehj2rjWEO6xCJQc_vqZ7OHGn8HzGEOA\"\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjNjN2ZhZjQ2ZTJhYjgxZTk5N2YiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTQzNDc2NiwiZXhwIjoxNjA5MjEwNzY2fQ.okhGYTTeJsIcehj2rjWEO6xCJQc_vqZ7OHGn8HzGEOA\"",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3800/user/showBook",
+			"folder": "d5e93c00-f101-4460-e708-2381c392c802",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1601438845069,
+			"name": "SHOW-BOOKS",
+			"description": "",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"responses": []
+		},
+		{
+			"id": "6d001f7e-1850-2658-1ceb-6862eeb62f1d",
+			"headers": "Authorization: \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjNjN2ZhZjQ2ZTJhYjgxZTk5N2YiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTQ0MjIzNSwiZXhwIjoxNjA5MjE4MjM1fQ.4CYqC21MtC3l2ss2F6rAqmheGdXcVRmgzopx5yE6cp4\"\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjNjN2ZhZjQ2ZTJhYjgxZTk5N2YiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTQ0MjIzNSwiZXhwIjoxNjA5MjE4MjM1fQ.4CYqC21MtC3l2ss2F6rAqmheGdXcVRmgzopx5yE6cp4\"",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3800/user/magazinesReports",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"data": [
+				{
+					"key": "filter",
+					"value": "REVISTAS MAS PRESTADAS",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "filter",
+					"value": "REVISTAS MÁS BUSCADAS",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "MAGAZINES-REPORTS",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1601444136569,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "75d61be4-0ce3-917f-a7aa-a113e9817e04",
+			"headers": "Authorization: \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczYjA0MzZkY2JhZDQ3NDhjZTc0ZGIiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTQxNzMxNSwiZXhwIjoxNjA5MTkzMzE1fQ.P8s-zh-vWnEutNYVRZlkxrem3_b0OcfRw9TdeQZPVBA\"\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczYjA0MzZkY2JhZDQ3NDhjZTc0ZGIiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTQxNzMxNSwiZXhwIjoxNjA5MTkzMzE1fQ.P8s-zh-vWnEutNYVRZlkxrem3_b0OcfRw9TdeQZPVBA\"",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3800/user/createMagazine",
+			"folder": "d4102454-ecaa-c755-7c51-73a888b0d1b1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "author",
+					"value": "Stan Lee",
+					"description": ""
+				},
+				{
+					"key": "title",
+					"value": "Spider-Man 2",
+					"description": ""
+				},
+				{
+					"key": "edition",
+					"value": "5ta",
+					"description": ""
+				},
+				{
+					"key": "description",
+					"value": "Spider-Man es un superhéroe ficticio creado por los escritores y editores Stan Lee y Steve Ditko. Apareció por primera vez en el cómic de antología Amazing Fantasy # 15, en la Edad de Plata de los cómics.",
+					"description": ""
+				},
+				{
+					"key": "frecuency",
+					"value": "Media",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "ejemplares",
+					"value": "70",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "themes",
+					"value": "Superhéroes",
+					"description": ""
+				},
+				{
+					"key": "keywords",
+					"value": "Acción",
+					"description": ""
+				},
+				{
+					"key": "copies",
+					"value": "55",
+					"description": ""
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1601439089848,
+			"name": "CREATE-MAGAZINES",
+			"description": "",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"responses": []
+		},
+		{
+			"id": "80ce7a3f-d7ea-b50f-fd1f-a562f8097726",
+			"headers": "Authorization: \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjZmOGY1ZGVjZTNlZTI1ZTQ5MDVjNjIiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTE1NDgxNSwiZXhwIjoxNjA4OTMwODE1fQ.Vn_ghWdlcSXztIBFi4lXR_3y0FFQ_ZXqKjnlyiKvkLA\"\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjZmOGY1ZGVjZTNlZTI1ZTQ5MDVjNjIiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTE1NDgxNSwiZXhwIjoxNjA4OTMwODE1fQ.Vn_ghWdlcSXztIBFi4lXR_3y0FFQ_ZXqKjnlyiKvkLA\"",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3800/user/updateBook",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"data": [
+				{
+					"key": "_id",
+					"value": "5f6fb0012589021314a32ea1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "UPDATE-BOOKS",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1601156191000,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "d5e93c00-f101-4460-e708-2381c392c802"
+		},
+		{
+			"id": "8e9861c6-671e-ee1f-b93f-368b4db179da",
+			"headers": "Authorization: \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjNjN2ZhZjQ2ZTJhYjgxZTk5N2YiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTQzNDc2NiwiZXhwIjoxNjA5MjEwNzY2fQ.okhGYTTeJsIcehj2rjWEO6xCJQc_vqZ7OHGn8HzGEOA\"\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjNjN2ZhZjQ2ZTJhYjgxZTk5N2YiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTQzNDc2NiwiZXhwIjoxNjA5MjEwNzY2fQ.okhGYTTeJsIcehj2rjWEO6xCJQc_vqZ7OHGn8HzGEOA\"",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3800/user/showMagazine",
+			"folder": "d4102454-ecaa-c755-7c51-73a888b0d1b1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1601439108596,
+			"name": "SHOW-MAGAZINES",
+			"description": "",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"responses": []
+		},
+		{
+			"id": "acf07b21-e2cc-60e8-532f-cc5ca80c201c",
+			"headers": "Authorization: \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjZmOGZhYzE2NWUyMzNkY2M5NTE1YmEiLCJuYW1lIjoiSm9zZSIsInN1cm5hbWUiOiJKb3NlIiwicm9sZSI6ImVzdHVkaWFudGUiLCJpYXQiOjE2MDExNDcwMzcsImV4cCI6MTYwODkyMzAzN30.l_LC07iOzeMES9MUOc0TIWTouBWeLhc89SCNRZ2A_HM\"\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjZmOGZhYzE2NWUyMzNkY2M5NTE1YmEiLCJuYW1lIjoiSm9zZSIsInN1cm5hbWUiOiJKb3NlIiwicm9sZSI6ImVzdHVkaWFudGUiLCJpYXQiOjE2MDExNDcwMzcsImV4cCI6MTYwODkyMzAzN30.l_LC07iOzeMES9MUOc0TIWTouBWeLhc89SCNRZ2A_HM\"",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3800/user/deleteUser",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"data": [
+				{
+					"key": "_id",
+					"value": "5f6f8fac165e233dcc9515ba",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "DELETE-USER",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1601148891738,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "1528a79b-740b-5475-a3e6-10f36e2decee"
+		},
+		{
+			"id": "bd34b9a8-5bf2-f52f-9721-f97d46e8d4eb",
+			"headers": "Authorization: \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjU4MmZhZjQ2ZTJhYjgxZTk5ODAiLCJuYW1lIjoiQnJ5YW4iLCJzdXJuYW1lIjoiR29tZXoiLCJjb3VudGVyTG9hbiI6MCwicm9sZSI6ImNhdGVkcsOhdGljbyIsImlhdCI6MTYwMTQzOTY1MiwiZXhwIjoxNjA5MjE1NjUyfQ.WoA52EukCHVNlwr2mejzNLZ-VfZLYfNofpBoNROBqw0\"\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjU4MmZhZjQ2ZTJhYjgxZTk5ODAiLCJuYW1lIjoiQnJ5YW4iLCJzdXJuYW1lIjoiR29tZXoiLCJjb3VudGVyTG9hbiI6MCwicm9sZSI6ImNhdGVkcsOhdGljbyIsImlhdCI6MTYwMTQzOTY1MiwiZXhwIjoxNjA5MjE1NjUyfQ.WoA52EukCHVNlwr2mejzNLZ-VfZLYfNofpBoNROBqw0\"",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3800/user/returnMagazines",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"data": [
+				{
+					"key": "title",
+					"value": "Spider-Man",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "RETURN-MAGAZINES",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1601440927025,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "d4102454-ecaa-c755-7c51-73a888b0d1b1"
+		},
+		{
+			"id": "bff84adb-5c6e-0a2a-4dc8-a73c65e54e31",
+			"headers": "Authorization: \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjZmOGY1ZGVjZTNlZTI1ZTQ5MDVjNjIiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTE1NDgxNSwiZXhwIjoxNjA4OTMwODE1fQ.Vn_ghWdlcSXztIBFi4lXR_3y0FFQ_ZXqKjnlyiKvkLA\"\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjZmOGY1ZGVjZTNlZTI1ZTQ5MDVjNjIiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTE1NDgxNSwiZXhwIjoxNjA4OTMwODE1fQ.Vn_ghWdlcSXztIBFi4lXR_3y0FFQ_ZXqKjnlyiKvkLA\"",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3800/user/deleteBook",
+			"folder": "d5e93c00-f101-4460-e708-2381c392c802",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "_id",
+					"value": "5f73f5b9faf46e2ab81e9982",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1601435103611,
+			"name": "DELETE-BOOK",
+			"description": "",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"responses": []
+		},
+		{
+			"id": "cbfe69f4-0505-c69d-94b9-078c0d43ae55",
+			"headers": "Authorization: \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjNjN2ZhZjQ2ZTJhYjgxZTk5N2YiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTQzNDc2NiwiZXhwIjoxNjA5MjEwNzY2fQ.okhGYTTeJsIcehj2rjWEO6xCJQc_vqZ7OHGn8HzGEOA\"\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjNjN2ZhZjQ2ZTJhYjgxZTk5N2YiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTQzNDc2NiwiZXhwIjoxNjA5MjEwNzY2fQ.okhGYTTeJsIcehj2rjWEO6xCJQc_vqZ7OHGn8HzGEOA\"",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3800/user/showUser",
+			"folder": "1528a79b-740b-5475-a3e6-10f36e2decee",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1601435051612,
+			"name": "SHOW-USERS",
+			"description": "",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"responses": []
+		},
+		{
+			"id": "f803caad-a4f5-ea34-dff0-daec1692f6ce",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n//Authorization: \n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "localhost:3800/user/login",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "admin",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "admin",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "getToken",
+					"value": "true",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1601435054187,
+			"name": "LOGIN",
+			"description": "",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"responses": []
+		},
+		{
+			"id": "f949b32a-3620-0cb9-37a8-ffcc4b31fb63",
+			"headers": "Authorization: \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjU4MmZhZjQ2ZTJhYjgxZTk5ODAiLCJuYW1lIjoiQnJ5YW4iLCJzdXJuYW1lIjoiR29tZXoiLCJjb3VudGVyTG9hbiI6MCwicm9sZSI6ImNhdGVkcsOhdGljbyIsImlhdCI6MTYwMTQzOTY1MiwiZXhwIjoxNjA5MjE1NjUyfQ.WoA52EukCHVNlwr2mejzNLZ-VfZLYfNofpBoNROBqw0\"\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjU4MmZhZjQ2ZTJhYjgxZTk5ODAiLCJuYW1lIjoiQnJ5YW4iLCJzdXJuYW1lIjoiR29tZXoiLCJjb3VudGVyTG9hbiI6MCwicm9sZSI6ImNhdGVkcsOhdGljbyIsImlhdCI6MTYwMTQzOTY1MiwiZXhwIjoxNjA5MjE1NjUyfQ.WoA52EukCHVNlwr2mejzNLZ-VfZLYfNofpBoNROBqw0\"",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3800/user/loanMagazines",
+			"folder": "d4102454-ecaa-c755-7c51-73a888b0d1b1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "title",
+					"value": "Spider-Man",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1601440341234,
+			"name": "LOAN-MAGAZINES",
+			"description": "",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"responses": []
+		},
+		{
+			"id": "fc937506-6b2b-cbce-1c9b-dbf856759c83",
+			"headers": "Authorization: \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjNjN2ZhZjQ2ZTJhYjgxZTk5N2YiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTQzNDc2NiwiZXhwIjoxNjA5MjEwNzY2fQ.okhGYTTeJsIcehj2rjWEO6xCJQc_vqZ7OHGn8HzGEOA\"\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjczZjNjN2ZhZjQ2ZTJhYjgxZTk5N2YiLCJuYW1lIjoiYWRtaW4iLCJzdXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGtpbmFsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMTQzNDc2NiwiZXhwIjoxNjA5MjEwNzY2fQ.okhGYTTeJsIcehj2rjWEO6xCJQc_vqZ7OHGn8HzGEOA\"",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3800/user/booksOrderBy",
+			"folder": "d5e93c00-f101-4460-e708-2381c392c802",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "filter",
+					"value": "AVALIABLE",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "order",
+					"value": "ASCENDENT",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "order",
+					"value": "DESCENDENT",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1601439326492,
+			"name": "ORDER-BOOKS",
+			"description": "",
+			"collectionId": "8230a22e-692b-9192-dfca-df98bbe435a7",
+			"responses": []
+		}
+	]
+}
