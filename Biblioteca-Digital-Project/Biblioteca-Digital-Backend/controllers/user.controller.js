@@ -5,6 +5,7 @@ var Book = require("../models/book.model");
 var Magazine = require("../models/magazine.model");
 var bcrypt = require("bcrypt-nodejs");
 var jwt = require("../services/jwt");
+const bookModel = require("../models/book.model");
 
 const userAdmin = {
     carnetOrCui: "2015482",
@@ -23,7 +24,7 @@ if (saveAdmin && saveAdmin.length >= 1) {
     bcrypt.hash(userAdmin.password, null, null, (err, passwordHash) => {
         saveAdmin.password = passwordHash;
     });
-    //saveAdmin.save();
+    saveAdmin.save();
 }
 
 //USER CRUD
@@ -1069,12 +1070,94 @@ function searchMagazine(req, res) {
     }
 }
 
-//USUARIO NORMAL
+//USER NORMAL
 
+//LOAN BOOK
 
+function loanBooks(req, res) {
+    var params = req.body;
+    if ('admin' != req.user.role) {
+        Book.find({
+            title: params.title
+        }, (err, bookFind) => {
+            if (err) res.status(500).send({
+                message: 'Error en la petición'
+            });
+            if (!bookFind) res.status(500).send({
+                message: 'No se encontro el libro'
+            });
+            if (req.user.counterLoan >= 0 || req.user.counterLoan >= 10) {
 
+                Book.findOne({
+                    title: params.title
+                }, (err, bookFinded) => {
+                    if (err) res.status(500).send({
+                        message: 'Error en la petición 2'
+                    });
+                    if (!bookFinded) res.status(500).send({
+                        message: 'No se encontro el libro'
+                    });
+                    if (bookFinded.avaliable >= 1) {
+                        Book.findByIdAndUpdate(bookFinded._id, {
+                            avaliable: bookFinded.avaliable - 1,
+                            searchCounter: bookFinded.searchCounter + 1,
+                            counterLoan: bookFinded.counterLoan + 1
+                        }, {
+                            new: true
+                        }, (err, bookUpdate) => {
+                            if (err) res.status(500).send({
+                                message: 'Error en la petición 3'
+                            });
+                            if (!bookUpdate) res.status(500).send({
+                                message: 'No se actualizo el libro'
+                            });
 
-        
+                            User.findById(req.user.sub, (err, userSearch) => {
+                                if (err) res.status(500).send({
+                                    message: 'Error en la petición 4'
+                                });
+                                if (!userSearch) res.status(500).send({
+                                    message: 'No se encontro el usuario'
+                                });
+                                var loanPlus = userSearch.counterLoan;
+                                User.findByIdAndUpdate(req.user.sub, {
+                                    counterLoan: ++loanPlus
+                                }, {
+                                    new: true
+                                }, (err, userUpdated) => {
+                                    if (err) res.status(500).send({
+                                        message: 'Error en la petición 5'
+                                    });
+                                    if (!userUpdated) res.status(500).send({
+                                        message: 'No se actualizo el usuario'
+                                    });
+                                    return res.status(200).send({
+                                        loan: bookUpdate
+                                    });
+                                })
+                            })
+                        })
+                    } else {
+                        return res.status(500).send({
+                            message: 'No hay en stock'
+                        });
+                    }
+                })
+
+            } else {
+                return res.status(500).send({
+                    message: 'Ya ha cumplido con el máximo de prestamos'
+                });
+            }
+        })
+    } else {
+        return res.status(500).send({
+            message: 'Administrador no puede realizar esta acción'
+        });
+    }
+}
+
+///LOAN MAGAZINE
 
 function loanMagazines(req, res) {
     var params = req.body;
@@ -1159,6 +1242,276 @@ function loanMagazines(req, res) {
     }
 }
 
+//RETURN BOOK
+
+function returnBooks(req, res) {
+    var params = req.body;
+    if ('admin' != req.user.role) {
+        Book.find({
+            title: params.title
+        }, (err, bookFind) => {
+            if (err) res.status(500).send({
+                message: 'Error en la petición'
+            });
+            if (!bookFind) res.status(500).send({
+                message: 'No se encontro el libro'
+            });
+            if (req.user.counterLoan >= 0 || req.user.counterLoan >= 10) {
+
+                Book.findOne({
+                    title: params.title
+                }, (err, bookFinded) => {
+                    if (err) res.status(500).send({
+                        message: 'Error en la petición 2'
+                    });
+                    if (!bookFinded) res.status(500).send({
+                        message: 'No se encontro el libro'
+                    });
+                    if (bookFinded.avaliable >= 1) {
+                        Book.findByIdAndUpdate(bookFinded._id, {
+                            avaliable: bookFinded.avaliable + 1,
+                            searchCounter: bookFinded.searchCounter + 1,
+                            counterLoan: bookFinded.counterLoan - 1
+                        }, {
+                            new: true
+                        }, (err, bookUpdate) => {
+                            if (err) res.status(500).send({
+                                message: 'Error en la petición 3'
+                            });
+                            if (!bookUpdate) res.status(500).send({
+                                message: 'No se actualizo el libro'
+                            });
+
+                            User.findById(req.user.sub, (err, userSearch) => {
+                                if (err) res.status(500).send({
+                                    message: 'Error en la petición 4'
+                                });
+                                if (!userSearch) res.status(500).send({
+                                    message: 'No se encontro el usuario'
+                                });
+                                var loanLess = userSearch.counterLoan;
+                                User.findByIdAndUpdate(req.user.sub, {
+                                    counterLoan: --loanLess
+                                }, {
+                                    new: true
+                                }, (err, userUpdated) => {
+                                    if (err) res.status(500).send({
+                                        message: 'Error en la petición 5'
+                                    });
+                                    if (!userUpdated) res.status(500).send({
+                                        message: 'No se actualizo el usuario'
+                                    });
+                                    return res.status(200).send({
+                                        return: bookUpdate
+                                    });
+                                })
+                            })
+                        })
+                    } else {
+                        return res.status(500).send({
+                            message: 'No hay en stock'
+                        });
+                    }
+                })
+
+            } else {
+                return res.status(500).send({
+                    message: 'Ya ha cumplido con el máximo de prestamos'
+                });
+            }
+        })
+    } else {
+        return res.status(500).send({
+            message: 'Administrador no puede realizar esta acción'
+        });
+    }
+}
+
+//RETURN MAGAZINE
+
+function returnMagazine(req, res) {
+    var params = req.body;
+    if ('admin' != req.user.role) {
+        Magazine.find({
+            title: params.title
+        }, (err, magazineFind) => {
+            if (err) res.status(500).send({
+                message: 'Error en la petición'
+            });
+            if (!magazineFind) res.status(500).send({
+                message: 'No se encontro la revista'
+            });
+            if (req.user.counterLoan >= 0 || req.user.counterLoan >= 10) {
+
+                Magazine.findOne({
+                    title: params.title
+                }, (err, magazineFinded) => {
+                    if (err) res.status(500).send({
+                        message: 'Error en la petición 2'
+                    });
+                    if (!magazineFinded) res.status(500).send({
+                        message: 'No se encontro la revista'
+                    });
+                    if (magazineFinded.avaliable >= 1) {
+                        Magazine.findByIdAndUpdate(magazineFinded._id, {
+                            avaliable: magazineFinded.avaliable + 1,
+                            searchCounter: magazineFinded.searchCounter + 1,
+                            counterLoan: magazineFinded.counterLoan - 1
+                        }, {
+                            new: true
+                        }, (err, magazineUpdate) => {
+                            if (err) res.status(500).send({
+                                message: 'Error en la petición 3'
+                            });
+                            if (!magazineUpdate) res.status(500).send({
+                                message: 'No se actualizo la revista'
+                            });
+
+                            User.findById(req.user.sub, (err, userSearch) => {
+                                if (err) res.status(500).send({
+                                    message: 'Error en la petición 4'
+                                });
+                                if (!userSearch) res.status(500).send({
+                                    message: 'No se encontro el usuario'
+                                });
+                                var loanLess = userSearch.counterLoan;
+                                User.findByIdAndUpdate(req.user.sub, {
+                                    counterLoan: --loanLess
+                                }, {
+                                    new: true
+                                }, (err, userUpdated) => {
+                                    if (err) res.status(500).send({
+                                        message: 'Error en la petición 5'
+                                    });
+                                    if (!userUpdated) res.status(500).send({
+                                        message: 'No se actualizo el usuario'
+                                    });
+                                    return res.status(200).send({
+                                        return: magazineUpdate
+                                    });
+                                })
+                            })
+                        })
+                    } else {
+                        return res.status(500).send({
+                            message: 'No hay en stock'
+                        });
+                    }
+                })
+
+            } else {
+                return res.status(500).send({
+                    message: 'Ya ha cumplido con el máximo de prestamos'
+                });
+            }
+        })
+    } else {
+        return res.status(500).send({
+            message: 'Administrador no puede realizar esta acción'
+        });
+    }
+}
+
+//REPORTS
+
+//BOOK REPORTS
+
+function booksReports(req, res) {
+    var params = req.body;
+    var filter = params.filter.toUpperCase();
+
+    if ('admin' == req.user.role) {
+        if ('LIBROS MAS PRESTADOS' == filter) {
+            Book.find().sort({
+                counterLoan: -1
+            }).exec(function (err, orderBooks) {
+                if (err) return res.status(500).send({
+                    message: 'Error en la petición'
+                });
+                if (!orderBooks) return res.status(404).send({
+                    message: 'No se ha podido mostrar'
+                });
+                return res.status(200).send({
+                    Ordered: orderBooks
+                });
+
+            })
+        } else if ('LIBROS MÁS BUSCADOS') {
+            Book.find().sort({
+                searchCounter: -1
+            }).exec(function (err, orderBooks) {
+                if (err) return res.status(500).send({
+                    message: 'Error en la petición'
+                });
+                if (!orderBooks) return res.status(404).send({
+                    message: 'No se ha podido mostrar'
+                });
+                return res.status(200).send({
+                    Ordered: orderBooks
+                });
+
+            })
+        } else {
+            return res.status(500).send({
+                message: 'La opción no es válida'
+            });
+        }
+    } else {
+        return res.status(500).send({
+            message: 'Solo el admin puede realizar esta acción'
+        });
+    }
+}
+
+//MAGAZINE REPORTS
+
+function magazinesReports(req, res) {
+    var params = req.body;
+    var filter = params.filter.toUpperCase();
+
+    if ('admin' == req.user.role) {
+        if ('REVISTAS MAS PRESTADAS' == filter) {
+            Magazine.find().sort({
+                counterLoan: -1
+            }).exec(function (err, orderMagazines) {
+                if (err) return res.status(500).send({
+                    message: 'Error en la petición'
+                });
+                if (!orderMagazines) return res.status(404).send({
+                    message: 'No se ha podido mostrar'
+                });
+                return res.status(200).send({
+                    Ordered: orderMagazines
+                });
+
+            })
+        } else if ('REVISTAS MÁS BUSCADAS') {
+            Magazine.find().sort({
+                searchCounter: -1
+            }).exec(function (err, orderMagazines) {
+                if (err) return res.status(500).send({
+                    message: 'Error en la petición'
+                });
+                if (!orderMagazines) return res.status(404).send({
+                    message: 'No se ha podido mostrar'
+                });
+                return res.status(200).send({
+                    Ordered: orderMagazines
+                });
+
+            })
+        } else {
+            return res.status(500).send({
+                message: 'La opción no es válida'
+            });
+        }
+    } else {
+        return res.status(500).send({
+            message: 'Solo el admin puede realizar esta acción'
+        });
+    }
+}
+
 module.exports = {
     loginUser,
     createUser,
@@ -1178,5 +1531,9 @@ module.exports = {
     orderMagazines,
     searchMagazine,
     loanBooks,
-    loanMagazines
+    loanMagazines,
+    returnBooks,
+    returnMagazine,
+    booksReports,
+    magazinesReports
 };

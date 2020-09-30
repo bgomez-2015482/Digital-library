@@ -29,5 +29,10 @@ api.post('/magazinesOrderBy', mdAuth.ensureAuth, userController.orderMagazines);
 api.post('/searchMagazine', mdAuth.ensureAuth, userController.searchMagazine);
 api.post('/loanBooks', mdAuth.ensureAuth, userController.loanBooks);
 api.post('/loanMagazines', mdAuth.ensureAuth, userController.loanMagazines);
+api.post('/returnBooks', mdAuth.ensureAuth, userController.returnBooks);
+api.post('/returnMagazines', mdAuth.ensureAuth, userController.returnMagazine);
+
+api.post('/booksReports', mdAuth.ensureAuth, userController.booksReports);
+api.post('/magazinesReports', mdAuth.ensureAuth, userController.magazinesReports);
 
 module.exports = api;
