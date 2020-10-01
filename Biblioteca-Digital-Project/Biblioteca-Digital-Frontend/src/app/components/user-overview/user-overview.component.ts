@@ -3,16 +3,17 @@ import { UserService } from "src/app/services/user/user.service";;
 import { Router } from "@angular/router";
 
 @Component({
-  selector: 'app-principal-page',
-  templateUrl: './principal-page.component.html',
-  styleUrls: ['./principal-page.component.css']
+  selector: 'app-user-overview',
+  templateUrl: './user-overview.component.html',
+  styleUrls: ['./user-overview.component.css']
 })
-export class PrincipalPageComponent implements OnInit {
+export class UserOverviewComponent implements OnInit {
   user;
   token = localStorage.getItem('token');
   constructor(private router: Router, private userService: UserService) {
     this.user = JSON.parse(localStorage.getItem('user'));
   }
+
 
   ngOnInit(): void {
     if (this.token == undefined) {

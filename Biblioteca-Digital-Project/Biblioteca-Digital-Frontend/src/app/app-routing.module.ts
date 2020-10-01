@@ -16,6 +16,11 @@ import { TerciaryPageComponent } from './components/terciary-page/terciary-page.
 import { CreateMagazineComponent } from './components/magazine-crud/create-magazine/create-magazine.component';
 import { EditMagazineComponent } from './components/magazine-crud/edit-magazine/edit-magazine.component';
 import { DeleteMagazineComponent } from './components/magazine-crud/delete-magazine/delete-magazine.component';
+import { UserOverviewComponent } from './components/user-overview/user-overview.component';
+import { LoanBooksComponent } from './components/user-overview/loan-books/loan-books.component';
+import { ReturnBooksComponent } from './components/user-overview/return-books/return-books.component';
+import { LoanMagazinesComponent } from './components/user-overview/loan-magazines/loan-magazines.component';
+import { ReturnMagazinesComponent } from './components/user-overview/return-magazines/return-magazines.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -34,6 +39,11 @@ const routes: Routes = [
   {path: 'editMagazine', component: EditMagazineComponent},
   {path: 'deleteMagazine', component: DeleteMagazineComponent},
   {path: 'reports', component: ReportsComponent},
+  {path: 'userOverview', component: UserOverviewComponent},
+  {path: 'loanBooks', component: LoanBooksComponent},
+  {path: 'returnBooks', component: ReturnBooksComponent},
+  {path: 'loanMagazines', component: LoanMagazinesComponent},
+  {path: 'returnMagazines', component: ReturnMagazinesComponent},
   {path: '**', component: NofFoundComponent}
 ];
 

@@ -12,7 +12,7 @@ const userAdmin = {
     name: "admin",
     surname: "admin",
     email: "admin@kinal.com",
-    role: "admin",
+    role: "administrador",
     password: "admin"
 };
 

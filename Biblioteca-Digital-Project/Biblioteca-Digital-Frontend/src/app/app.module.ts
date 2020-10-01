@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,8 +11,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { NofFoundComponent } from './components/nof-found/nof-found.component';
 import { PrincipalPageComponent } from './components/principal-page/principal-page.component';
 import { UserService } from './services/user/user.service';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
 import { CreateUserComponent } from './components/create-user/create-user.component';
 import { EditUserComponent } from './components/edit-user/edit-user.component';
 import { DeleteUserComponent } from './components/delete-user/delete-user.component';
@@ -23,6 +23,11 @@ import { CreateMagazineComponent } from './components/magazine-crud/create-magaz
 import { EditMagazineComponent } from './components/magazine-crud/edit-magazine/edit-magazine.component';
 import { DeleteMagazineComponent } from './components/magazine-crud/delete-magazine/delete-magazine.component';
 import { ReportsComponent } from './components/reports/reports.component';
+import { UserOverviewComponent } from './components/user-overview/user-overview.component';
+import { LoanBooksComponent } from './components/user-overview/loan-books/loan-books.component';
+import { ReturnBooksComponent } from './components/user-overview/return-books/return-books.component';
+import { LoanMagazinesComponent } from './components/user-overview/loan-magazines/loan-magazines.component';
+import { ReturnMagazinesComponent } from './components/user-overview/return-magazines/return-magazines.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +48,12 @@ import { ReportsComponent } from './components/reports/reports.component';
     CreateMagazineComponent,
     EditMagazineComponent,
     DeleteMagazineComponent,
-    ReportsComponent
+    ReportsComponent,
+    UserOverviewComponent,
+    LoanBooksComponent,
+    ReturnBooksComponent,
+    LoanMagazinesComponent,
+    ReturnMagazinesComponent
   ],
   imports: [
     BrowserModule,

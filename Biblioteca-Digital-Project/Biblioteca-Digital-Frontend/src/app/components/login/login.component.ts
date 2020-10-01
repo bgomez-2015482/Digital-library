@@ -20,28 +20,28 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit(){
-    if(this.userLogin.name != '' || this.userLogin.email){
-      if(this.userLogin.password != ''){
-        this.rest.login(this.userLogin).subscribe((res:any) => {
-          if(res.message){
-            alert(res.message)
-          } else if (res.token){
-            alert('Bienvenido ' + res.user);
-            localStorage.setItem('token', res.token);
-            res.password = '';
-            localStorage.setItem('user', JSON.stringify(res.user));
-            this.router.navigateByUrl('overview');
-          }else{
-            alert('Ha ocurrido un error desconocido')
-          }
-        })
-      }else{
-        alert('Ingresa la contraseña')
+  onSubmit() {
+      if (this.userLogin.name != '' || this.userLogin.email) {
+        if (this.userLogin.password != '') {
+          this.rest.login(this.userLogin).subscribe((res: any) => {
+            if (res.message) {
+              alert(res.message)
+            } else if (res.token) {
+              alert('Bienvenido ' + res.user);
+              localStorage.setItem('token', res.token);
+              localStorage.setItem('role', JSON.stringify(res.role));
+              res.password = '';
+              localStorage.setItem('user', JSON.stringify(res.user));
+              this.router.navigateByUrl('overview');
+            } else {
+              alert('Ha ocurrido un error desconocido')
+            }
+          })
+        } else {
+          alert('Ingresa la contraseña')
+        }
+      } else {
+        alert('Ingresa los datos de autenticación')
       }
-    }else{
-      alert('Ingresa los datos de autenticación')
-    }
   }
-
 }

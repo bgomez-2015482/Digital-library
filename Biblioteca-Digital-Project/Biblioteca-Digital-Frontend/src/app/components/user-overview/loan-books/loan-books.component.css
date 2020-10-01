@@ -1,0 +1,8 @@
+#navigationTop{
+    padding-top: 10px;
+}
+
+#returnButton{
+    cursor: pointer;
+    font-size: 35px;
+}
