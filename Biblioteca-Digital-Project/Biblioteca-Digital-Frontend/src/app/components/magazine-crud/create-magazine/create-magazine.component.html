@@ -1,0 +1,89 @@
+<div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 mx-auto">
+    <div class="card card0 border-0 py-3">
+      <div class="row d-flex py-3">
+        <div class="col-lg-4">
+          <div class="card1 pb-5">
+            <div class="row px-3 justify-content-center mt-4 mb-5 border-line"> <img
+                src="../../../assets/images/add-magazine.png" class="image"> </div>
+          </div>
+        </div>
+  
+        <form class="form-signin col-lg-8" (ngSubmit)="onSubmit()">
+          <div class="card2 card border-0 px-4 py-3">
+            <h5 class="mb-0 mr-4 mt-2 py-4 text-center">Crear Revista</h5>
+            <div class="row px-3">
+              <label class="mb-1">
+                <h6 class="mb-0 text-sm">Autor</h6>
+              </label>
+              <input [(ngModel)]="magazine.author" class="mb-2" type="text" name="text" placeholder="Ingresa el nombre del autor">
+            </div>
+            <div class="row px-3">
+              <label class="mb-1">
+                <h6 class="mb-0 text-sm">Titulo</h6>
+              </label>
+              <input [(ngModel)]="magazine.title" type="text" name="text" placeholder="Ingresa el titulo">
+            </div>
+            <div class="row px-3">
+              <label class="mb-1">
+                <h6 class="mb-0 text-sm">Edición</h6>
+              </label>
+              <input [(ngModel)]="magazine.edition" type="text" name="text" placeholder="Ingresa la edición">
+            </div>
+            <div class="row px-3">
+              <label class="mb-1">
+                <h6 class="mb-0 text-sm">Descripción</h6>
+              </label>
+              <input [(ngModel)]="magazine.description" type="text" name="text" placeholder="Ingresa una descripción">
+            </div>
+            <div class="row px-3">
+                <label class="mb-1">
+                  <h6 class="mb-0 text-sm">Frecuencia Actual</h6>
+                </label>
+                <input [(ngModel)]="magazine.frecuency" type="text" name="text" placeholder="Ingresa la frecuencia actual">
+              </div>
+              <div class="row px-3">
+                <label class="mb-1">
+                  <h6 class="mb-0 text-sm">Ejemplares</h6>
+                </label>
+                <input [(ngModel)]="magazine.ejemplares" type="number" name="text" placeholder="Ingresa el número de ejemplares">
+              </div>
+              <div class="row px-3">
+                <label class="mb-1">
+                  <h6 class="mb-0 text-sm">Temas</h6>
+                </label>
+                <input [(ngModel)]="magazine.themes" type="text" name="text" placeholder="Ingresa el tema">
+              </div>
+            <div class="row px-3">
+              <label class="mb-1">
+                <h6 class="mb-0 text-sm">Palabras clave</h6>
+              </label>
+              <input [(ngModel)]="magazine.keywords" type="text" name="text" placeholder="Ingresa las palabras clave">
+            </div>
+            <div class="row px-3">
+              <label class="mb-1">
+                <h6 class="mb-0 text-sm">Copias</h6>
+              </label>
+              <input [(ngModel)]="magazine.copies" type="number" name="number" placeholder="Ingresa el número de copias">
+            </div>
+            <div class="row px-3 py-1">
+              <label class="mb-1">
+                <h6 class="mb-0 text-sm">Disponibles</h6>
+              </label>
+              <input [(ngModel)]="magazine.avaliable" type="number" name="number" placeholder="Ingresa el numero de disponibles">
+            </div>
+            <div class="row px-3 mb-4">
+            </div>
+            <div class="row mb-3 px-3">
+              <div class="col-6">
+                <button type="submit" class="btn bg-success btn-blue text-center">Crear revista</button>
+              </div>
+              <div class="col-6">
+                <button type="submit" class="btn bg-danger btn-blue text-center" routerLink="/magazines">Cancelar</button>
+              </div>
+            </div>
+          </div>
+        </form>
+  
+      </div>
+    </div>
+  

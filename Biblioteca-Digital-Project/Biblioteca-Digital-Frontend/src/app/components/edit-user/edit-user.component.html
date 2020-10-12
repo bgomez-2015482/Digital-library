@@ -1,0 +1,67 @@
+<div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 mx-auto">
+  <div class="card card0 border-0 py-1">
+    <div class="row d-flex py-3">
+      <div class="col-lg-4">
+        <div class="card1 pb-5">
+          <div class="row px-3 justify-content-center mt-4 mb-5 border-line"> <img
+              src="../../../assets/images/editar-usuario.png" class="image"> </div>
+        </div>
+      </div>
+
+      <form class="form-signin col-lg-8" (ngSubmit)="onSubmit()">
+        <div class="card2 card border-0 px-4 py-1">
+          <h5 class="mb-0 mr-4 mt-2 py-4 text-center">Editar Usuario</h5>
+          <div class="row px-3">
+            <label class="mb-1">
+              <h6 class="mb-0 text-sm">ID</h6>
+            </label>
+            <input class="mb-2" type="number" name="number" placeholder="ID" readonly>
+          </div>
+          <div class="row px-3">
+            <label class="mb-1">
+              <h6 class="mb-0 text-sm">Carnet/Cui</h6>
+            </label>
+            <input class="mb-2" type="number" name="number" placeholder="Ingresa tu carnet o cui">
+          </div>
+          <div class="row px-3">
+            <label class="mb-1">
+              <h6 class="mb-0 text-sm">Nombre</h6>
+            </label>
+            <input type="text" name="text" placeholder="Ingresa tu primer nombre">
+          </div>
+          <div class="row px-3">
+            <label class="mb-1">
+              <h6 class="mb-0 text-sm">Apellido</h6>
+            </label>
+            <input type="text" name="text" placeholder="Ingresa tu apellido">
+          </div>
+          <div class="row px-3">
+            <label class="mb-1">
+              <h6 class="mb-0 text-sm">Rol</h6>
+            </label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Administrador</option>
+              <option>Estudiante</option>
+            </select>
+          </div>
+          <div class="row px-3 py-1">
+            <label class="mb-1">
+              <h6 class="mb-0 text-sm">Contraseña</h6>
+            </label>
+            <input type="password" name="password" placeholder="Ingresa tu contraseña">
+          </div>
+          <div class="row px-3 mb-4">
+          </div>
+          <div class="row mb-3 px-3">
+            <div class="col-6">
+              <button type="submit" class="btn bg-success btn-blue text-center">Editar usuario</button>
+            </div>
+            <div class="col-6">
+              <button type="submit" class="btn bg-danger btn-blue text-center" routerLink="/overview">Cancelar</button>
+            </div>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>

@@ -1,0 +1,14 @@
+.container{
+    	display: flex;
+      	justify-content: center;	
+}
+
+button{
+    width: 400px;
+    color: black;
+}
+
+#bookImg{
+    height: 50px;
+    width: 50px;
+}

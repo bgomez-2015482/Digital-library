@@ -1,0 +1,144 @@
+<app-navbar></app-navbar>
+
+<div class="container-fluid" id="navigationTop">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" routerLink="/returnBooks">Libros</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/returnMagazines">Revistas</a>
+    </li>
+  </ul>
+</div>
+
+<div class="container-fluid py-2">
+  <div class="row">
+    <div class="col-6 text-center py-1">
+      <nav id="secondNav" class="navbar navbar-light">
+        <form class="form-inline">
+          <input class="form-control mr-sm-1" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
+          <div class="form-check form-check-inline px-1">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"
+              checked>
+            <label class="form-check-label" for="inlineRadio1">Título (Predeterminado)</label>
+          </div>
+          <div class="form-check form-check-inline px-1">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio2">Palabra clave</label>
+          </div>
+          <div class="form-check form-check-inline">
+          </div>
+        </form>
+      </nav>
+    </div>
+    <div class="col-6">
+      <div class="row">
+        <div class="col-6 text-center py-3">
+          <div class="btn-group">
+            <label class="px-2 py-1" for="searchOption1">Ordenar por:</label>
+            <button type="button" class="btn btn-secondary">ID</button>
+            <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Copias</a>
+              <a class="dropdown-item" href="#">Disponibles</a>
+              <!--<div class="dropdown-divider"></div>-->
+            </div>
+          </div>
+        </div>
+        <div class="col-6 text-center py-2">
+          <svg routerLink="/userOverview" id="returnButton" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-90deg-left" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-3 py-3">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Libro 1</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-danger btn-lg btn-block">Devolver</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-3 py-3">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Libro 2</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-danger btn-lg btn-block">Devolver</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-3 py-3">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Libro 3</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-danger btn-lg btn-block">Devolver</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-3 py-3">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Libro 4</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-danger btn-lg btn-block">Devolver</a>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-3 py-3">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Libro 5</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-danger btn-lg btn-block">Devolver</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-3 py-3">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Libro 6</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-danger btn-lg btn-block">Devolver</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-3 py-3">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Libro 7</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-danger btn-lg btn-block">Devolver</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-3 py-3">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Libro 8</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-danger btn-lg btn-block">Devolver</a>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+
