@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpHeaders, HttpClient } from "@angular/common/http";
+<<<<<<< HEAD
 import { Observable } from "rxjs";
+=======
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
 import { map } from "rxjs/operators";
 
 @Injectable({
@@ -13,12 +16,20 @@ export class UserService {
       'Content-Type': 'application/json'
     })
   };
+<<<<<<< HEAD
 
   private extractData(res: Response) {
+=======
+  
+  constructor(private http: HttpClient) { }
+
+  private extractData(res: Response){
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
     let body = res;
     return body || [] || {};
   }
 
+<<<<<<< HEAD
   constructor(private http: HttpClient) { }
 
   getUsers(): Observable<any> {
@@ -88,11 +99,15 @@ export class UserService {
   }
 
   login(dataUser) {
+=======
+  login(dataUser){
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
     let params = JSON.stringify(dataUser);
     return this.http.post(this.endpoint + 'login', params, this.httpOptions).pipe(
       map(this.extractData)
     )
   }
+<<<<<<< HEAD
 
   updateUser(dataUser) {
     let params = JSON.stringify(dataUser);
@@ -116,4 +131,6 @@ export class UserService {
   }
 
 
+=======
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
 }

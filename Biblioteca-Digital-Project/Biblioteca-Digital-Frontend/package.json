@@ -22,11 +22,17 @@
     "@popperjs/core": "^2.5.2",
     "bootstrap": "^4.5.2",
     "bootstrap-icons": "^1.0.0",
+<<<<<<< HEAD
     "crypto-js": "^4.0.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
     "rxjs": "~6.5.5",
     "sweetalert2": "^10.3.5",
+=======
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "rxjs": "~6.5.5",
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },

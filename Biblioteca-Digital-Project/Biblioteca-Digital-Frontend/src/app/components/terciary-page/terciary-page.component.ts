@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { Router } from "@angular/router";
 import { UserService } from 'src/app/services/user/user.service';
 import swal from 'sweetalert2';
+=======
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
 
 @Component({
   selector: 'app-terciary-page',
@@ -9,6 +12,7 @@ import swal from 'sweetalert2';
   styleUrls: ['./terciary-page.component.css']
 })
 export class TerciaryPageComponent implements OnInit {
+<<<<<<< HEAD
   magazines = [];
   user;
   token = localStorage.getItem('token');
@@ -37,4 +41,12 @@ export class TerciaryPageComponent implements OnInit {
       console.log(this.magazines);
     })
   }
+=======
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
 }

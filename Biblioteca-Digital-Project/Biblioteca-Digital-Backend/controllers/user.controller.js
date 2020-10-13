@@ -5,12 +5,23 @@ var Book = require("../models/book.model");
 var Magazine = require("../models/magazine.model");
 var bcrypt = require("bcrypt-nodejs");
 var jwt = require("../services/jwt");
+<<<<<<< HEAD
 
 const userAdmin = {
     cui: "2015482",
     name: "admin",
     surname: "admin",
     role: "admin",
+=======
+const bookModel = require("../models/book.model");
+
+const userAdmin = {
+    carnetOrCui: "2015482",
+    name: "admin",
+    surname: "admin",
+    email: "admin@kinal.com",
+    role: "administrador",
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
     password: "admin"
 };
 
@@ -22,7 +33,11 @@ if (saveAdmin && saveAdmin.length >= 1) {
     bcrypt.hash(userAdmin.password, null, null, (err, passwordHash) => {
         saveAdmin.password = passwordHash;
     });
+<<<<<<< HEAD
     //saveAdmin.save();
+=======
+    saveAdmin.save();
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
 }
 
 //USER CRUD
@@ -30,12 +45,22 @@ if (saveAdmin && saveAdmin.length >= 1) {
 function loginUser(req, res) {
     var params = req.body;
 
+<<<<<<< HEAD
     if (params.name) {
+=======
+    if (params.name || params.email) {
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
         if (params.password) {
             User.findOne({
                     $or: [{
                             name: params.name,
                         },
+<<<<<<< HEAD
+=======
+                        {
+                            email: params.email,
+                        },
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
                     ],
                 },
                 (err, check) => {
@@ -87,12 +112,17 @@ function loginUser(req, res) {
             message: 'Ingresa tu correo o nombre de usuario'
         });
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
 }
 
 function createUser(req, res) {
     var params = req.body;
     var user = new User();
     var rolles = params.role;
+<<<<<<< HEAD
 
 
     if( user.carnet = params.carnet,
@@ -131,6 +161,9 @@ function createUser(req, res) {
         res.send({message: 'Ingresa todos los datos'});
     }
    /* if ('admin' == req.user.role) {
+=======
+    if ('admin' == req.user.role) {
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
         if ('admin' == rolles) {
             user.name = params.name,
                 user.role = params.role,
@@ -254,12 +287,20 @@ function createUser(req, res) {
         return res.status(500).send({
             message: 'Solo el admin puede realizar esta acción'
         });
+<<<<<<< HEAD
     }*/
+=======
+    }
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
 }
 
 function deleteUser(req, res) {
     var params = req.body;
+<<<<<<< HEAD
     /*if ('admin' == req.user.role) {*/
+=======
+    if ('admin' == req.user.role) {
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
         User.findById(params._id, (err, userFind) => {
             if (err) res.status(500).send({
                 message: 'Error en la petición'
@@ -277,11 +318,19 @@ function deleteUser(req, res) {
                 });
             })
         })
+<<<<<<< HEAD
     /*} else {
         return res.status(500).send({
             message: 'Solo el admin puede realizar esta acción'
         });
     }*/
+=======
+    } else {
+        return res.status(500).send({
+            message: 'Solo el admin puede realizar esta acción'
+        });
+    }
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
 }
 
 function updateUser(req, res) {
@@ -289,7 +338,11 @@ function updateUser(req, res) {
     var user = new User();
     var rolles = params.role;
 
+<<<<<<< HEAD
     /*if ('admin' == req.user.role) {*/
+=======
+    if ('admin' == req.user.role) {
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
         User.findById(params._id, (err, userFind) => {
             if (err) return res.status(500).send({
                 message: 'Error en la petición'
@@ -363,16 +416,28 @@ function updateUser(req, res) {
             }
 
         })
+<<<<<<< HEAD
     /*} else {
         return res.status(500).send({
             message: 'Solo el admin puede realizar esta acción'
         });
     }*/
+=======
+    } else {
+        return res.status(500).send({
+            message: 'Solo el admin puede realizar esta acción'
+        });
+    }
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
 }
 
 function showUser(req, res) {
     var params = req.body;
+<<<<<<< HEAD
    // if ('admin' == req.user.role) {
+=======
+    if ('admin' == req.user.role) {
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
         User.find((err, userFind) => {
             if (err) return res.status(500).send({
                 message: 'Error en la petición'
@@ -381,6 +446,7 @@ function showUser(req, res) {
                 message: 'No se han podido mostrar los registros'
             });
             return res.status(200).send({
+<<<<<<< HEAD
                 users: userFind
             });
         })
@@ -389,6 +455,16 @@ function showUser(req, res) {
             message: 'Solo el admin puede realizar esta acción'
         });
 }*/
+=======
+                Mostrar: userFind
+            });
+        })
+    } else {
+        return res.status(500).send({
+            message: 'Solo el admin puede realizar esta acción'
+        });
+    }
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
 }
 
 //BOOK CRUD
@@ -397,6 +473,7 @@ function createBook(req, res) {
     var params = req.body;
     var book = new Book();
     var rolles = params.role;
+<<<<<<< HEAD
 
     if(book.author = params.author,
         book.title = params.title,
@@ -430,6 +507,9 @@ function createBook(req, res) {
             res.send({message: 'Ingresa todos los datos'});
         }
     /*if ('admin' == req.user.role) {
+=======
+    if ('admin' == req.user.role) {
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
         if (params.author &&
             params.title &&
             params.edition &&
@@ -481,11 +561,19 @@ function createBook(req, res) {
                 message: 'Debe llenar todos los campos'
             });
         }
+<<<<<<< HEAD
     /*} else {
         return res.status(500).send({
             message: 'Solo el admin puede realizar esta acción'
         });
     }*/
+=======
+    } else {
+        return res.status(500).send({
+            message: 'Solo el admin puede realizar esta acción'
+        });
+    }
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
 }
 
 function deleteBook(req, res) {
@@ -559,7 +647,11 @@ function updateBook(req, res) {
 
 function showBook(req, res) {
     var params = req.body;
+<<<<<<< HEAD
     /*if ('admin' == req.user.role) {*/
+=======
+    if ('admin' == req.user.role) {
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
         Book.find((err, bookFind) => {
             if (err) return res.status(500).send({
                 message: 'Error en la petición'
@@ -568,6 +660,7 @@ function showBook(req, res) {
                 message: 'No se han podido mostrar los registros'
             });
             return res.status(200).send({
+<<<<<<< HEAD
                 books: bookFind
             });
         })
@@ -576,6 +669,16 @@ function showBook(req, res) {
             message: 'Solo el admin puede realizar esta acción'
         });
     }*/
+=======
+                Mostrar: bookFind
+            });
+        })
+    } else {
+        return res.status(500).send({
+            message: 'Solo el admin puede realizar esta acción'
+        });
+    }
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
 }
 
 //MAGAZINE CRUD
@@ -584,6 +687,7 @@ function createMagazine(req, res) {
     var params = req.body;
     var magazine = new Magazine();
     var rolles = params.role;
+<<<<<<< HEAD
 
     if(magazine.author = params.author,
         magazine.title = params.title,
@@ -616,6 +720,9 @@ function createMagazine(req, res) {
             res.send({message: 'Ingrese todos los datos'});
         }
     /*if ('admin' == req.user.role) {
+=======
+    if ('admin' == req.user.role) {
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
         if (params.author &&
             params.title &&
             params.edition &&
@@ -666,7 +773,11 @@ function createMagazine(req, res) {
                 }
             })
         }
+<<<<<<< HEAD
     }*/
+=======
+    }
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
 }
 
 function deleteMagazine(req, res) {
@@ -737,7 +848,11 @@ function updateMagazine(req, res) {
 }
 
 function showMagazine(req, res) {
+<<<<<<< HEAD
    /* if ('admin' == req.user.role) {*/
+=======
+    if ('admin' == req.user.role) {
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
         Magazine.find((err, magazineFind) => {
             if (err) return res.status(500).send({
                 message: 'Error en la petición'
@@ -746,6 +861,7 @@ function showMagazine(req, res) {
                 message: 'No se han podido mostrar los registros'
             });
             return res.status(200).send({
+<<<<<<< HEAD
                 magazines: magazineFind
             });
         })
@@ -754,6 +870,16 @@ function showMagazine(req, res) {
             message: 'Solo el admin puede realizar esta acción'
         });
     }*/
+=======
+                Mostrar: magazineFind
+            });
+        })
+    } else {
+        return res.status(500).send({
+            message: 'Solo el admin puede realizar esta acción'
+        });
+    }
+>>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
 }
 
 //ORDER BOOKS
