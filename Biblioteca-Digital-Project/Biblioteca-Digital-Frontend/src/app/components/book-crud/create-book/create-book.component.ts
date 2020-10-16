@@ -1,11 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
 import { Router } from '@angular/router';
 import { BookModel } from 'src/app/models/book.model';
 import { UserService } from 'src/app/services/user/user.service';
 import swal from 'sweetalert2';
-=======
->>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
 
 @Component({
   selector: 'app-create-book',
@@ -13,22 +10,16 @@ import swal from 'sweetalert2';
   styleUrls: ['./create-book.component.css']
 })
 export class CreateBookComponent implements OnInit {
-<<<<<<< HEAD
   book: BookModel;
   titularAlerta:string='';
 
   constructor(private rest: UserService, private router: Router) {
     this.book = new BookModel('', '', '', '', '', '', null, null);
   }
-=======
-
-  constructor() { }
->>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
 
   ngOnInit(): void {
   }
 
-<<<<<<< HEAD
   onSubmit() {
     console.log(this.book);
     if (this.book.author != '' &&
@@ -57,6 +48,4 @@ export class CreateBookComponent implements OnInit {
     }
   }
 
-=======
->>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
 }

@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
 import { Router } from '@angular/router';
 import { UserService } from "src/app/services/user/user.service";
 import swal from 'sweetalert2';
-=======
->>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
 
 @Component({
   selector: 'app-secundary-page',
@@ -12,7 +9,6 @@ import swal from 'sweetalert2';
   styleUrls: ['./secundary-page.component.css']
 })
 export class SecundaryPageComponent implements OnInit {
-<<<<<<< HEAD
   books = [];
   book;
   user;
@@ -40,12 +36,6 @@ export class SecundaryPageComponent implements OnInit {
       this.books = res.books;
       console.log(this.books);
     })
-=======
-
-  constructor() { }
-
-  ngOnInit(): void {
->>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
   }
 
 }

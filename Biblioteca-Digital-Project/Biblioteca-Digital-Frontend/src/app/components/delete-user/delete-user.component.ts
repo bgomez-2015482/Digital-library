@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
 import { UserService } from "src/app/services/user/user.service";
-=======
->>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
 
 @Component({
   selector: 'app-delete-user',
@@ -10,7 +7,6 @@ import { UserService } from "src/app/services/user/user.service";
   styleUrls: ['./delete-user.component.css']
 })
 export class DeleteUserComponent implements OnInit {
-<<<<<<< HEAD
   users = [];
   user;
 
@@ -38,12 +34,6 @@ export class DeleteUserComponent implements OnInit {
         alert('Error al eliminar cuenta');
       }
     })
-=======
-
-  constructor() { }
-
-  ngOnInit(): void {
->>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
   }
 
 }

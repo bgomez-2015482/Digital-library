@@ -1,11 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
 import { UserService } from 'src/app/services/user/user.service';
 import { MagazineModel } from '../../../models/magazine.model';
 import swal from 'sweetalert2';
 import { Router } from '@angular/router';
-=======
->>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
 
 @Component({
   selector: 'app-create-magazine',
@@ -13,7 +10,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./create-magazine.component.css']
 })
 export class CreateMagazineComponent implements OnInit {
-<<<<<<< HEAD
   magazine: MagazineModel;
   titularAlerta:string='';
   constructor(private rest: UserService, private router: Router) {
@@ -51,12 +47,6 @@ export class CreateMagazineComponent implements OnInit {
       swal.fire('Ingresa todos los datos para crear la cuenta ', this.titularAlerta, 'warning');
     }
     
-=======
-
-  constructor() { }
-
-  ngOnInit(): void {
->>>>>>> 352171d6b312f226a5642f51f4e331f20783365a
   }
 
 }
